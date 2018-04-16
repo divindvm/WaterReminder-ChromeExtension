@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Water Tracker</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="image">
+            <img src="water.gif" alt="">
+    </div>
+   
+    <h1>Water Tracker</h1>
+
+    <!-- <h2>Total Glass Consumed : </h2> -->
+    <h2>Consumed : <span id="total">0</span> &nbsp; &nbsp;&nbsp;Today's Goal : <span id="goal">0</span></h2>
+    <h3>Enter No. of Glasses Consumed : </h3>
+    <!-- <input type="text" id="amount"/> -->
+    <select name="frequency" id="amount">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+    </select> 
+    <input  class="buttonClass" type="submit" name="" id="addAmount" value="Add Glass">
+</body>
+</html>

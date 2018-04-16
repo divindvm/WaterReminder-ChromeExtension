@@ -1,0 +1,54 @@
+h1{
+    color: #6cadc9;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+img{
+    width: 250px; 
+    height: auto;
+    margin: 0 auto;
+}
+html{
+    width: 276px;
+    padding: 0px 10px 10px 10px !important;
+    /* background: white url("wave.jpg") no-repeat fixed bottom;  */
+}
+select{
+    position: fixed;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 21px;
+    outline: none !important;
+    border: 1px solid #509fc1 !important;
+    color: #509fc1;
+}
+h2, h3{
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+h3{
+    color: #60ccf5;
+    font-size: 12px;
+}
+h2{
+    color: #a09e9e;
+    font-size: 14px;
+}
+span{
+    color: teal;
+    font-size: 17px;
+}
+.buttonClass{
+    width: 100%;
+    padding: 10px;
+    background-color: #6cadc9;
+    border: 1px solid #509fc1;
+    color: #cce6f8;
+    cursor: pointer;
+}
+.buttonClass:hover{
+    background-color:#fff !important; 
+    color: #509fc1 !important;
+}
