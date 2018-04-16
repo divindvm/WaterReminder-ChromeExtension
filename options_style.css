@@ -1,0 +1,36 @@
+body {
+  margin: 10px;
+  font: 84% Arial, sans-serif
+}
+
+h1 { font-size: 200%;
+  width: fit-content;
+  margin: 0 auto;
+  color: #00b6e8;
+ }
+
+h1 img {
+  margin: 1px 5px 0 1px;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+h2 {
+  border-top: 1px solid #9cc2ef;
+  background-color: #ebeff9;
+  padding: 3px 5px;
+  font-size: 100%
+}
+
+form{
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 20px;
+}
+
+select{
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+}
