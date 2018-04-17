@@ -10,45 +10,69 @@
     <link rel="stylesheet" href="options.css">
   </head>
   <body>
-  
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="water.gif" alt="" class="water">
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 textClass">
+                    <h1 class="head">
+                        <img src="icon.png" alt="Toast">
+                        Water Reminder
+                      </h1>
+                      <h2></h2>
+    
+                      <form id="options" class="row">
+                          <div class="col-md-6">
+                              <input type="checkbox" name="isActivated" checked class="check">
+                              Notify me on every&nbsp;
+                          </div>
+                          <div class="col-md-6">
+                              <select name="frequency">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>5</option>
+                                  <option>10</option>
+                                  <option>15</option>
+                                  <option>20</option>
+                                  <option>30</option>
+                                  <option>60</option>
+                                  <option>120</option>
+                                  <option>180</option>
+                                  <option>240</option>
+                                </select>
+                                &nbsp; &nbsp;
+                                minute(s).
+                          </div>
+                      </form>
 
-                <h1>
-                    <img src="icon.png" alt="Toast">
-                    Water Reminder
-                  </h1>
-                  <h2></h2>
-                  <form id="options">
-                    <input type="checkbox" name="isActivated" checked>
-                    Notify me on every&nbsp;
-                    <select name="frequency">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>5</option>
-                      <option>10</option>
-                      <option>15</option>
-                      <option>20</option>
-                      <option>30</option>
-                      <option>60</option>
-                      <option>120</option>
-                      <option>180</option>
-                      <option>240</option>
-                    </select>
-                    minute(s).
-                  </form>
-               
+
+                      <div class="goalClass">
+                        <h1 class="goalHead">Set Your Goal for Today</h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="messageLabel">Your Message</p>
+                                <input type="text" id="message" class="messageClass">
+                            </div>
+                            <div class="col-md-6">
+                                <!-- <h2>Goal:</h2> -->
+                                <input type="text" id="goal" class="goalClass">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="submit" name="" id="save" value="Save" class="save"/>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" name="" id="reset" value="Reset Total" class="reset"/>
+                            </div>
+                        </div>
+                      </div>
+
+                </div>
             </div>
         </div>
+       
     </div>
-
-    <div>
-      <h1>Protein Tracker Options</h1>
-      <h2>Goal: <input type="text" id="goal"></h2>
-      <input type="submit" name="" id="save" value="Save"/>
-      <input type="submit" name="" id="reset" value="Reset Total"/>
-    </div>
-
+    <p class="copy">copyright  	&copy; Divin Divakaran</p>
   </body>
 </html>

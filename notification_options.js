@@ -26,14 +26,16 @@ window.addEventListener('load', function() {
 
 $(function(){
 
-  chrome.storage.sync.get('goal', function(items){
+  chrome.storage.sync.get(['goal','message'], function(items){
       $('#goal').val(items.goal);
+      $('#message').val(items.message);
   });
 
   $('#save').click(function(){
       var goal = $('#goal').val();
+      var message = $('#message').val();
       if(goal){
-          chrome.storage.sync.set({ 'goal' :goal}, function(){
+          chrome.storage.sync.set({ 'goal' :goal, 'message':message}, function(){
               close();
           })
       }

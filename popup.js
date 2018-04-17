@@ -29,7 +29,7 @@ $(function(){
                 
                 var opt = {
                     type: "basic",
-                    title: "Goal Reached",
+                    title: "Goal Reached. Well Done!",
                     message : "You Reached Your Goal " + items.goal + " !",
                     iconUrl:"icon.png"
                 }

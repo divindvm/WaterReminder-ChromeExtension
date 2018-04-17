@@ -6,7 +6,7 @@
   "author": "Divin Divakaran",
   "homepage_url": "https://github.com/divindvm/WaterReminder-ChromeExtension",
   "description":
-    "A Water Reminder Extension that can be scheduled on desired intervals. This extension shows desktop notifications.",
+    "A Water Reminder and Tracking Extension which shows desktop notifications.",
   "icons": { "48": "icon.png"},
 
 
