@@ -29,4 +29,14 @@ You can change time interval, message and goal from the options menu.
 ![goal reached notification](https://user-images.githubusercontent.com/22031979/38853908-63d2aab6-423c-11e8-92ea-19617747a68a.PNG)
 
 
-###### 
+###### Reminder Notification
+
+![notification reminder](https://user-images.githubusercontent.com/22031979/38854012-b7bab394-423c-11e8-801a-df76ab3b2bcb.PNG)
+
+
+###### Reminder Notification
+
+
+###### Reminder Notification
+
+
