@@ -34,9 +34,14 @@ You can change time interval, message and goal from the options menu.
 ![notification reminder](https://user-images.githubusercontent.com/22031979/38854012-b7bab394-423c-11e8-801a-df76ab3b2bcb.PNG)
 
 
-###### Reminder Notification
+###### Options page
 
 
-###### Reminder Notification
+![options page](https://user-images.githubusercontent.com/22031979/38854024-c04ebdc0-423c-11e8-9973-9db26bd2ef8c.PNG)
+
+
+###### Tracker
+
+![tracker](https://user-images.githubusercontent.com/22031979/38854031-c55db87a-423c-11e8-99cc-173def50c72b.PNG)
 
 
