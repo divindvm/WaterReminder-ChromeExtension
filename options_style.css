@@ -76,12 +76,13 @@ input{
 }
 .save{
   width: 100% !important;
-  padding: 3px;
+  padding: 15px;
+  margin-top: 20px;
 }
 .reset{
   width: 100% !important;
   padding: 3px;
-  margin-top: 20px;
+  
 }
 .goal{
   padding: 3px;
@@ -143,4 +144,24 @@ p{
   margin: 0 !important;
   padding: 0 !important;
   color: #c8c8c8;
+}
+
+#sound{
+  width: 100% !important;
+}
+#soundOptions{
+  width: 100% !important;
+  margin: 0 !important;
+}
+.soundNotification{
+  padding: 0 !important;
+}
+.play{
+  width: 30px !important;
+  height: 30px !important;
+  cursor: pointer;
+}
+.playClass{
+  padding: 0 !important;
+  padding-right: 5px !important;
 }

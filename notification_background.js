@@ -1,19 +1,20 @@
-
-
-
-
-
-
-
+function audioNotification(notificationSound){
+  console.log("notidfication Sound Passed : "+notificationSound);
+  var sound = new Audio('audio/'+notificationSound+'.mp3');
+  sound.play();
+}
 
 function show() {
   var time = /(..)(:..)/.exec(new Date());     
   var hour = time[1] % 12 || 12;              
   var period = time[1] < 12 ? 'a.m.' : 'p.m.'; 
   var message;
-  chrome.storage.sync.get('message', function(items){
+  var notificationSound;
+
+  chrome.storage.sync.get(['message','sound'], function(items){
      message =items.message;
-     
+     notificationSound=items.sound;
+
      if(message == ""){
       message = 'Hi, DiViN. Time to drink some WATER.'
     }
@@ -23,10 +24,13 @@ function show() {
       body: message
     });
 
+    if(JSON.parse(localStorage.isSoundActivated)){
+      audioNotification(notificationSound);
+    }
 
   });
 
-
+  
   
 }
 

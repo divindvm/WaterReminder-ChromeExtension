@@ -3,18 +3,18 @@
   <head>
     <title>Water Notification - Set Interval</title>
     <script src="jquery-3.3.1.js"></script>
-    <script src="options.js"></script>
+    <!-- <script src="options.js"></script> -->
     <link href="options_style.css" rel="stylesheet" type="text/css">
     <script src="notification_options.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="options.css">
+    <!-- <link rel="stylesheet" href="options.css"> -->
   </head>
   <body>
     <div class="wrap">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="water.gif" alt="" class="water">
+                    <img src="water.gif" alt="" class="water" id="glass">
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 textClass">
                     <h1 class="head">
@@ -47,9 +47,30 @@
                           </div>
                       </form>
 
-
                       <div class="goalClass">
                         <h1 class="goalHead">Set Your Goal for Today</h1>
+
+                        <form id="soundOptions" class="row">
+                                <div class="col-md-6 soundNotification">
+                                    <input type="checkbox" name="isSoundActivated" checked class="check" id="soundCheck">
+                                    Notification Sound&nbsp;
+                                </div>
+                                <div class="col-md-1 playClass" id="playAudio">
+                                    <img src="play.png" alt="" class="play">
+                                </div>
+                                <div class="col-md-5 soundNotification">
+                                        <select name="sound" id="sound">
+                                                <option>A Beautiful Drop</option>
+                                                <option>Light</option>
+                                                <option>Multiple Water Drops</option>
+                                                <option>To th Point</option>
+                                                <option>Water Drop</option>
+                                                <option>Water Splash Ploor</option>
+                                                <option>Water Splash</option>
+                                        </select>
+                                </div>
+                        </form>
+
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="messageLabel">Your Message</p>
@@ -60,12 +81,37 @@
                                 <input type="text" id="goal" class="goalClass">
                             </div>
                             <div class="col-md-6">
-                                <input type="submit" name="" id="save" value="Save" class="save"/>
-                            </div>
-                            <div class="col-md-12">
                                 <input type="submit" name="" id="reset" value="Reset Total" class="reset"/>
                             </div>
+                            <div class="col-md-12">
+                                <input type="submit" name="" id="save" value="Save Changes" class="save"/>
+                            </div>
                         </div>
+
+
+                       
+
+
+
+
+                        <!-- <div class="row">
+                            <div class="col-md-6">
+                                <input type="checkbox" name="isSoundActivated" checked class="check">
+                                <p class="messageLabel">Notification Sound</p>
+                            </div>
+                            <div class="col-md-6">
+                                <select name="sound" id="sound">
+                                    <option>A Beautiful Drop</option>
+                                    <option>Light</option>
+                                    <option>Multiple Water Drops</option>
+                                    <option>To th Point</option>
+                                    <option>Water Drop</option>
+                                    <option>Water Splash Ploor</option>
+                                    <option>Water Splash</option>
+                                </select>
+                            </div>
+                        </div> -->
+
                       </div>
 
                 </div>
