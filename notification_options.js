@@ -42,19 +42,21 @@ window.addEventListener('load', function() {
     localStorage.frequency = options.frequency.value;
   };
 
-
-
 });
-
 
 //options for water tracker goal
 
 $(function(){
 
   chrome.storage.sync.get(['goal','message','sound'], function(items){
+
       $('#goal').val(items.goal);
       $('#message').val(items.message);
       $('#sound').val(items.sound);
+
+      if(items.sound == null || items.sound == ""){
+        $('#sound').val("A Beautiful Drop");
+      }
 
   });
 
@@ -71,7 +73,14 @@ $(function(){
 
       if(goal){
           chrome.storage.sync.set({ 'goal' :goal, 'message':message, 'sound': sound}, function(){
-            //   close();
+            var opt = {
+                type: "basic",
+                title: "Changes Saved Successfully.",
+                message : "",
+                iconUrl:"icon.png"
+            }
+            chrome.notifications.create('saveChanges', opt, function(){});
+              close();
           })
       }
        localStorage.isSoundActivated = $('#soundCheck').is(":checked");

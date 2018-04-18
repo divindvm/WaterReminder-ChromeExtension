@@ -1,6 +1,18 @@
 $(function(){
 
     chrome.storage.sync.get(['total','goal'], function(items){
+
+
+
+        var defaultValue=0;
+        
+        if(items.total == null || items.total == ""){
+            $('#total').text(defaultValue); 
+        }
+        if(items.goal == null || items.total == ""){
+            $('#goal').text(defaultValue); 
+        }
+
         $('#total').text(items.total);
         $('#goal').text(items.goal);
         // $('#amount').value("1");
@@ -22,8 +34,11 @@ $(function(){
         else if(percentage<100 && percentage>=75){
             $("#glass").attr("src","images/five.gif");
         }
-        else{
+        else if(percentage>=100){
             $("#glass").attr("src","images/goal.gif");
+        }
+        else{
+            $("#glass").attr("src","images/one.gif");
         }
     
     });
