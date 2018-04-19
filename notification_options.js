@@ -20,8 +20,6 @@ window.addEventListener('load', function() {
 //   soundOptions.isSoundActivated.checked = JSON.parse(localStorage.isSoundActivated);
   
 
-
-
   if (!options.isActivated.checked) { setNotification(true); }
 
   options.isActivated.onchange = function() {
@@ -81,7 +79,11 @@ $(function(){
             }
             chrome.notifications.create('saveChanges', opt, function(){});
               close();
-          })
+          });
+      }
+
+      else{
+        alert("Goal Not Set");
       }
        localStorage.isSoundActivated = $('#soundCheck').is(":checked");
   });
@@ -94,7 +96,6 @@ $(function(){
               message : "Total Number of Glasses Consumed Today has been reset to zero.",
               iconUrl:"icon.png"
           }
-
           chrome.notifications.create('reset', opt, function(){});
       });
   });

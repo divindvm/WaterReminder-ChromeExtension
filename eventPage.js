@@ -1,13 +1,13 @@
 var menuitem = {
-    "id" : "addProtein",
-    "title" : "Add Protein",
+    "id" : "waterReminder",
+    "title" : "Add Water",
     "contexts": ["selection"]
 }
 
 chrome.contextMenus.create(menuitem);
 
 chrome.contextMenus.onClicked.addListener(function (clickData){
-    if(clickData.menuItemId == "addProtein" && clickData.selectionText){
+    if(clickData.menuItemId == "waterReminder" && clickData.selectionText){
         var intRegex = /^\d+$/;
         if (intRegex.test(clickData.selectionText)){
 
