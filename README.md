@@ -24,24 +24,15 @@ You can change time interval, message and goal from the options menu.
 
 ## App ScreenShots
 
-###### Goal Reached Notification
+###### Notifications
 
-![goal reached notification](https://user-images.githubusercontent.com/22031979/38853908-63d2aab6-423c-11e8-92ea-19617747a68a.PNG)
-
-
-###### Reminder Notification
-
-![notification reminder](https://user-images.githubusercontent.com/22031979/38854012-b7bab394-423c-11e8-801a-df76ab3b2bcb.PNG)
+![notification](https://user-images.githubusercontent.com/22031979/38981477-24fed272-43dd-11e8-8d97-e5eadbd52111.jpg)
 
 
 ###### Options page
 
 
-![options page](https://user-images.githubusercontent.com/22031979/38854024-c04ebdc0-423c-11e8-9973-9db26bd2ef8c.PNG)
+![options page](https://user-images.githubusercontent.com/22031979/38981402-f5cd1874-43dc-11e8-93a5-7654a582df59.jpg)
 
-
-###### Tracker
-
-![tracker](https://user-images.githubusercontent.com/22031979/38854031-c55db87a-423c-11e8-99cc-173def50c72b.PNG)
 
 
