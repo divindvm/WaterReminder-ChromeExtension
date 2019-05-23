@@ -4,8 +4,10 @@
     <title>Water Notification - Set Interval</title>
     <script src="jquery-3.3.1.js"></script>
     <!-- <script src="options.js"></script> -->
+    <script src="chart.js"></script>
     <link href="options_style.css" rel="stylesheet" type="text/css">
     <script src="notification_options.js"></script>
+
     <link rel="stylesheet" href="bootstrap.min.css">
     <!-- <link rel="stylesheet" href="options.css"> -->
   </head>
@@ -14,7 +16,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="water.gif" alt="" class="water" id="glass">
+                    <!-- <img src="water.gif" alt="" class="water" id="glass"> -->
+                    <canvas id="myChart"></canvas>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 textClass">
                     <h1 class="head">

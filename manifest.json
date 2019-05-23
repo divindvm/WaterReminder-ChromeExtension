@@ -13,7 +13,8 @@
   "permissions": [
     "storage",
     "notifications",
-    "contextMenus"
+    "contextMenus",
+    "alarms"
   ],
 
   "browser_action" :{

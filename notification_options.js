@@ -40,6 +40,27 @@ window.addEventListener('load', function() {
     localStorage.frequency = options.frequency.value;
   };
 
+
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var chart = new Chart(ctx, {
+      // The type of chart we want to create
+      type: 'line',
+
+      // The data for our dataset
+      data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+              label: 'My First dataset',
+              backgroundColor: 'rgb(255, 99, 132)',
+              borderColor: 'rgb(255, 99, 132)',
+              data: [0, 10, 5, 2, 20, 30, 45]
+          }]
+      },
+
+      // Configuration options go here
+      options: {}
+  });
+
 });
 
 //options for water tracker goal
@@ -71,11 +92,18 @@ $(function(){
 
       if(goal){
           chrome.storage.sync.set({ 'goal' :goal, 'message':message, 'sound': sound}, function(){
+            // var opt = {
+            //     type: "basic",
+            //     title: "Changes Saved Successfully.",
+            //     message : "",
+            //     iconUrl:"icon.png"
+            // }
             var opt = {
-                type: "basic",
-                title: "Changes Saved Successfully.",
-                message : "",
-                iconUrl:"icon.png"
+              type: "progress",
+              title: "Primary Title",
+              message: "Primary message to display",
+              iconUrl: "icon.png",
+              progress: 42
             }
             chrome.notifications.create('saveChanges', opt, function(){});
               close();
